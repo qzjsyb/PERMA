@@ -141,7 +141,7 @@ ggsave("GPS_23.pdf",location.23,  width = 5, height = 5)
 center_lon <- (max(filtered_GPS_23$Longitude) - min(filtered_GPS_23$Longitude))/2 +  min(filtered_GPS_23$Longitude)
 center_lat <- (max(filtered_GPS_23$Latitude) - min(filtered_GPS_23$Latitude))/2 +  min(filtered_GPS_23$Latitude)
 
-register_google(key = "AIzaSyAS9pmymMRNNlZnjC4PMaSYOmKM0KBDKVo", write = TRUE)
+register_google(key = #use your google API, write = TRUE)
 
 map <- get_googlemap(center = c(lon = center_lon, lat = center_lat), zoom = 16, maptype = "satellite")
 

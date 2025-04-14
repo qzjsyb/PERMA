@@ -707,7 +707,7 @@ lapply(icartin, plot_feature_temporal)
 
 results_list <- list()
 
-# Define a function to perform regression analysis for each dataframe
+# Define a function to perform regression analysis for each habitat, depth combined.
 run_regression_analysis <- function(df) {
   # Filter only columns starting with "FT_" (metabolites) and required metadata
   metabolite_cols <- grep("^FT_", colnames(df), value = TRUE)
